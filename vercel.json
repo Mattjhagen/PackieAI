@@ -2,23 +2,6 @@
   "version": 2,
   "name": "pacmac-mobile",
   "builds": [
-      {
-        "builds": [
-          { "src": "index.html", "use": "@vercel/static" }
-        ]
-      }
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/server.js"
-    }
-  ],
-  "env": {
-    "NODE_ENV": "production"
-  },
-  "functions": {
-    "server.js": {
-      "maxDuration": 30
-    }
-  }
+    { "src": "index.html", "use": "@vercel/static" }
+  ]
 }
